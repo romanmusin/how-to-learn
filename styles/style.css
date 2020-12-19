@@ -204,18 +204,21 @@
 }
 
 .feynman {
+  height: 790px;
   display: flex;
   flex-direction: column;
   position: relative;
+  background-color: #f2f2f2;
   background-position: left bottom;
-  background-size: 867px 637px;
+
   background-image: url(../images/feynman.png);
   background-repeat: no-repeat;
-
+  background-size: 867px 637px;
 }
 
 .feynman__title {
   align-self: center;
+  text-align: center;
   width: 648px;
   margin: 100px auto 70px;
   line-height: 1.15;
@@ -225,6 +228,7 @@
 
 .feynman__subtitle {
   align-self: center;
+  text-align: center;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
