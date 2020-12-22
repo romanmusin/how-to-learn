@@ -27,7 +27,6 @@
 .logo {
   margin: 0;
   background-image: url('../images/logo_place_header.svg');
-  position: absolute;
 }
 
 .logo_place_header {
@@ -94,6 +93,7 @@
 }
 .description {
   display: flex;
+  margin-top: 50px;
 }
 
 .two-columns {
@@ -102,7 +102,7 @@
   display: flex;
   padding: 0;
   position: relative;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .two-columns__brief {
@@ -251,30 +251,15 @@
 
 }
 
-.section-title__theme_dark {
-  width: 60%;
+.section-title_theme_dark {
+
   margin: 90px auto 20px;
-  padding: 0;
-  display: flex;
-  justify-content: center;
   color: white;
-  line-height: 1.15;
-  font-size: 60px;
-  font-weight: bold;
   z-index: 1;
 }
 
-.section-subtitle__theme_dark {
-  width: 60%;
-  margin: 0;
-  align-self: center;
-  display: flex;
-  justify-content: center;
-  padding: 0;
+.section-subtitle_theme_dark {
   color: white;
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
   z-index: 1;
 }
 
@@ -282,10 +267,11 @@
   background-image: url(../images/kaufman-triangle.svg);
   width: 877px;
   height: 877px;
+  background-size: cover;
   position: absolute;
   top: 0;
   right: -210px;
-}
+  }
 
 .table_theme_dark {
   width: 1100px;
@@ -312,7 +298,6 @@
   min-height: 350px;
   display: flex;
   justify-content: center;
-
 }
 
 .footer__columns {
@@ -320,7 +305,6 @@
   margin: 60px auto 40px;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
   justify-content: space-between;
 }
 
@@ -330,7 +314,7 @@
   font-size: 18px;
   font-weight: normal;
   margin: 18px 0;
-  align-self: flex-end;
+  align-self: left flex-end;
 }
 
 .logo_place_footer {
@@ -343,14 +327,18 @@
 }
 
 .footer__column_content_copyright {
+  margin: 0;
   flex-basis: 711px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .footer__column_content_info {
+  margin: 0;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
 }
 
 .footer__column-heading {
@@ -359,6 +347,7 @@
   font-size: 18px;
   font-weight: bold;
   margin: 0 0 20px;
+
 }
 
 .footer__column-links {
@@ -370,12 +359,17 @@
   font-size: 18px;
   font-weight: normal;
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+
 }
 
 
 .footer__column_content_social {
+  margin: 0;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
 }
 
 .footer__column-link {
