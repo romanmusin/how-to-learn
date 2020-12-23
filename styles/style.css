@@ -301,7 +301,6 @@
 }
 
 .footer__columns {
-  border: 1px solid green;
   margin: 60px auto 40px;
   width: 90%;
   display: flex;
@@ -336,7 +335,6 @@
 }
 
 .footer__column_content_info {
-  border: 1px solid red;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -369,7 +367,6 @@
 
 
 .footer__column_content_social {
-  border: 1px solid red;
   margin: 0;
   display: flex;
   flex-direction: column;
