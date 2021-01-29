@@ -1,4 +1,11 @@
-
+@keyframes rotation {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 
 .page {
   min-width: 1100px;
@@ -85,7 +92,7 @@
   position: absolute;
   top: 64px;
   right: 0;
-
+  animation: rotation 20s infinite linear;
 }
 
 .content {
@@ -93,12 +100,12 @@
 }
 .description {
   display: flex;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 .two-columns {
   width: 80%;
-  margin: 50px auto;
+  margin: 0 auto;
   display: flex;
   padding: 0;
   position: relative;
@@ -137,6 +144,85 @@
   font-weight: bold;
   line-height: 34px;
   font-size: 24px;
+}
+
+.techniques {
+  width: 80%;
+  padding-top: 50px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  width: 920px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.cards__item {
+  list-style-type: none;
+  width: 240px;
+  margin-right: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.cards__item:nth-of-type(3n) {
+  margin-right: 0;
+}
+
+.cards__image {
+  height: 160px;
+  width: 160px;
+  margin: 60px 40px 43px;
+  border-radius: 50%;
+}
+
+.cards__title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.cards__description {
+  margin:16px 0 0;
+  line-height: 23px;
+  font-size: 18px;
+  font-weight: normal;
+  flex-wrap: wrap;
+
+}
+
+.video {
+  display: flex;
+  flex-direction: column;
+}
+
+.video__iframes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 50px 0 -80px;
+}
+
+.video__iframe:nth-of-type(2n) {
+  margin-left: 20px;
+}
+
+.oakley {
+  background-color:  #f2f2f2;
+  margin: 0;
+  padding-top: 240px;
 }
 
 .digits {
@@ -200,7 +286,7 @@
 
 .feynman {
   min-height: 790px;
-  padding-top: 100px;
+  padding-top: 80px;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -242,6 +328,77 @@
   font-weight: normal;
 }
 
+.khan {
+  background-color: #f2f2f2;
+  padding-top: 105px;
+}
+
+.khan__container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.khan__author {
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.khan__title {
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.khan__quote {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  width: 790px;
+  margin: 50px 0 0;
+}
+
+.khan__quote-author {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 36px 0 0;
+}
+
+.khan__quote-author-subline {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 10px 0 0;
+}
+
+.khan__book-container {
+  width: 100%;
+  margin: 68px 0 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.khan__book-pic {
+  width: 608px;
+  height: 620px;
+}
+
+.khan__buy-link {
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+  color: #2f80ed;
+  text-decoration: none;
+  margin: 0 0 0 48px;
+}
+
 .kaufman{
   background-color: #1f1f1f;
   display: flex;
@@ -271,6 +428,7 @@
   position: absolute;
   top: 0;
   right: -210px;
+  animation: rotation 20s infinite linear;
   }
 
 .table_theme_dark {
@@ -292,6 +450,27 @@
   margin-top: 80px;
 }
 
+.resources {
+  padding: 50px 0 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.resources__logo-zone {
+  width: 1100px;
+  margin: 80px auto 217px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.resources__logo {
+  list-style-type: none;
+  width: 270px;
+  height: 38px;
+}
 
 .footer {
   background-color: #1f1f1f;
