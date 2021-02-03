@@ -1,0 +1,8 @@
+.logo_place_footer {
+  margin: 0;
+  border: none;
+  width: 183px;
+  height: 35px;
+  background-image: url(../../../images/logo_place_footer.svg);
+  align-self: flex-start;
+}
