@@ -5,6 +5,12 @@
   margin: 50px 0 -80px;
 }
 
+.video__iframe {
+  width: 515px;
+  height: 316px;
+  border: 0;
+}
+
 .video__iframe:nth-of-type(2n) {
   margin-left: 20px;
 }
