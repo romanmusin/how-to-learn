@@ -6,3 +6,8 @@
   background-image: url(../../../images/logo_place_footer.svg);
   align-self: flex-start;
 }
+
+.logo_place_footer:hover {
+  opacity: 0.7;
+  transition: opacity 0.1s ease;
+}
